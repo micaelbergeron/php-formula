@@ -201,14 +201,14 @@
             'fpm': {
                 'conf': '/etc/php/php-fpm.conf',
                 'ini': '/etc/php/php.ini',
-                'pools': '/etc/php/fpm.d',
+                'pools': '/etc/php/php-fpm.d',
                 'service': 'php-fpm',
                 'defaults': {
                     'global': {
                         'pid': '/run/php-fpm/php-fpm.pid',
                         'error_log': 'log/php-fpm.log',
                     },
-                    'include': '/etc/php/fpm.d/*.conf',
+                    'include': '/etc/php/php-fpm.d/*.conf',
                 },
             },
             'cli': {
